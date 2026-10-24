@@ -1,0 +1,25 @@
+#define _CRT_SECURE_NO_WARNINGS
+
+#include<stdio.h>
+
+int main() {
+
+int cm;
+
+int inch;
+
+int foot;
+
+printf("请输入cm:\n");
+
+scanf("%d", &cm);
+
+foot = cm / 30.48;
+
+inch = ((cm / 30.48) - foot) * 12;
+
+printf("inch=%d,foot=%d", inch, foot);
+
+return 0;
+
+}

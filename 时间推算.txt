@@ -1,0 +1,20 @@
+#define  _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+int main() {
+	int time = 0;
+	int latertime = 0;
+	int lasttime = 0;
+	int a = 0;
+	int b = 0;
+	int c = 0;
+	printf("请输入用四位数表示的时间：\n");
+	scanf("%d", &time);
+	printf("请输入过去分钟:\n");
+	scanf("%d", &latertime);
+	a = time / 100;
+	b = time % 100;
+	c = a * 60 + b + latertime;
+	lasttime = (c / 60) * 100 + c % 60;
+	printf("最终时间是：%d", lasttime);
+	return 0;
+}
